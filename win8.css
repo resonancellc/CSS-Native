@@ -6,3 +6,8 @@
     border-style: solid;
     border-width: 1px;
 }
+
+.button:hover {
+    background: #ECF4FC;
+    border-color: #7EB4EA;
+}
