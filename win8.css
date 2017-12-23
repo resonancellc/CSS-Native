@@ -11,3 +11,8 @@
     background: #ECF4FC;
     border-color: #7EB4EA;
 }
+
+.button:active {
+    background: #DAECFC;
+    border-color: #569DE5;
+}
