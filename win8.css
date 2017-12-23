@@ -36,4 +36,9 @@ input[type="text"]:hover {
 input[type="text"]:active {
     border-color: #569DE5;
 }
+
+.disabled {
+    border-color: #D9D9D9;
+    background: #EFEFEF;
+    color: #838383;
 }
