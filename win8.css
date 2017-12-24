@@ -77,6 +77,7 @@ input[type="range"] {
 
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
+    outline: none;
     width: 11px;
     height: 23px;
     border-style: solid;
@@ -93,6 +94,62 @@ input[type="range"]::-webkit-slider-thumb:hover {
 
 input[type="range"]::-webkit-slider-thumb:active {
     background: linear-gradient(#DAECFC, #C4E0FC);
+    border-color: #569DE5;
+}
+
+/*
+    Number
+ */
+
+input[type="number"] {
+    -webkit-appearance: none;
+    outline: none;
+    border-style: solid;
+    border-width: 1px;
+
+    border-color: #ABADB3;
+}
+
+input[type="number"]:hover {
+    border-color: #7EB4EA;
+}
+
+input[type="number"]:active {
+    border-color: #569DE5;
+}
+
+input[type="number"]:focus {
+    border-color: #569DE5;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    outline: none;
+    width: 11px;
+    height: 23px;
+    border-style: solid;
+    border-width: 1px;
+    margin: 1px;
+    opacity: 1;
+
+    background: linear-gradient(#F0F0F0, #E5E5E5);
+    padding-right: 4px;
+    padding-bottom: 30px;
+
+    border-color: #C5C5C5;
+}
+
+input[type="number"]::-webkit-inner-spin-button:hover {
+    background: linear-gradient(#ECF4FC, #DCECFC);
+    border-color: #7EB4EA;
+}
+
+input[type="number"]::-webkit-inner-spin-button:active {
+    background: linear-gradient(#DAECFC, #C4E0FC);
+    border-color: #569DE5;
+}
+
+input[type="number"]::-webkit-inner-spin-button:focus {
     border-color: #569DE5;
 }
 
