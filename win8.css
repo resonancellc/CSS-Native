@@ -15,6 +15,8 @@ input[type="button"] {
     outline: none;
     border-style: solid;
     border-width: 1px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
 
     background: linear-gradient(#F0F0F0, #E5E5E5);
     border-color: #C5C5C5;
@@ -139,9 +141,6 @@ input[type="number"]::-webkit-inner-spin-button:hover {
 }
 
 input[type="number"]::-webkit-inner-spin-button:active {
-}
-
-input[type="number"]::-webkit-inner-spin-button:focus {
 }
 
 /*

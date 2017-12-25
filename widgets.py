@@ -3,7 +3,9 @@ from tkinter import ttk
 import tkinter.font as tkFont
 from pprint import pprint
 
-class Spinbox(ttk.Widget):
+# The TTK wrapper lacks a Spinbox for some reason.
+# This provides a wrapped class for it.
+class ttk_Spinbox(ttk.Widget):
     def __init__(self, master, **kw):
         ttk.Widget.__init__(self, master, 'ttk::spinbox', kw)
 
@@ -19,7 +21,7 @@ button.pack(side="left", padx=pad[0], pady=pad[1])
 check = ttk.Checkbutton(root)
 check.pack(side="left", padx=pad[0], pady=pad[1])
 
-spin = Spinbox(root)
+spin = ttk_Spinbox(root)
 spin.pack(side="left", padx=pad[0], pady=pad[1])
 
 scale = ttk.Scale(root)
@@ -46,6 +48,6 @@ pprint(ttk.Style().layout("TRadiobutton"))
 print()
 
 # Print the system font.
-print(tkFont.nametofont("TkDefaultFont").config())
+print(tkFont.nametofont("TkDefaultFont").actual())
 
 root.mainloop()
