@@ -5,3 +5,29 @@
 body {
     background-color: #F5F6F7;
 }
+
+/*
+    Button
+ */
+
+input[type="button"] {
+    -webkit-appearance: none;
+    outline: none;
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+
+    background: #E1E1E1;
+    border-color: #ADADAD;
+}
+
+input[type="button"]:hover {
+    background: #E5F1FB;
+    border-color: #0078D7;
+}
+
+input[type="button"]:active {
+    background: #CCE4F7;
+    border-color: #005499;
+}
