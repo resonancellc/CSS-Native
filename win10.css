@@ -89,3 +89,47 @@ input[type="range"]::-webkit-slider-thumb:hover {
 input[type="range"]::-webkit-slider-thumb:active {
     background: #171717;
 }
+
+/*
+    Number
+ */
+
+input[type="number"] {
+    -webkit-appearance: none;
+    outline: none;
+    border-style: solid;
+    border-width: 1px;
+
+    border-color: #7A7A7A;
+}
+
+input[type="number"]:hover {
+    border-color: #0078D7;
+}
+
+input[type="number"]:active {
+    border-color: #171717;
+}
+
+input[type="number"]:focus {
+    border-color: #171717;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    outline: none;
+    width: 11px;
+    height: 23px;
+    margin: 1px;
+    opacity: 1;
+
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAASCAYAAACEnoQPAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xOdTWsmQAAAB+SURBVDhPpdHLCcAgEEXR6b8W29KF+OtgwgR8qHmQaBbHhXoRHFHVY+Kc01N33FrbhrjWug1xzpkSEbpvEKeUHizs2DniGONkDLv1DuIQwjbEp+jwv/r3si1sjm8Ql1Im7LfXO4jZHMeQnSNeZ9hZyPYNYu/9NsSn6Py+UbkAQLJlKRdACaEAAAAASUVORK5CYII=');
+    padding-right: 4px;
+    padding-bottom: 31px;
+}
+
+input[type="number"]::-webkit-inner-spin-button:hover {
+}
+
+input[type="number"]::-webkit-inner-spin-button:active {
+}
