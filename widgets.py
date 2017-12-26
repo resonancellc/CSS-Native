@@ -11,6 +11,7 @@ class ttk_Spinbox(ttk.Widget):
 
 root = tk.Tk()
 root.wm_attributes("-topmost", True)
+root.geometry("600x80")
 
 pad = [3, 5]
 
@@ -33,6 +34,15 @@ entry.pack(side="left", padx=pad[0], pady=pad[1])
 radio = ttk.Radiobutton(root)
 radio.pack(side="left", padx=pad[0], pady=pad[1])
 
+scroll = ttk.Scrollbar(root)
+scroll.pack(side="left", fill="y", padx=pad[0], pady=pad[1])
+
+text = tk.Text(root, yscrollcommand=scroll.set)
+for _ in range(50):
+    text.insert("end", "\n")
+
+scroll.configure(command=text.yview)
+
 # Print the layout of the default styles.
 pprint(ttk.Style().layout("TButton"))
 print()
@@ -45,6 +55,8 @@ print()
 pprint(ttk.Style().layout("TEntry"))
 print()
 pprint(ttk.Style().layout("TRadiobutton"))
+print()
+pprint(ttk.Style().layout("Horizontal.TScrollbar"))
 print()
 
 # Print the system font.
